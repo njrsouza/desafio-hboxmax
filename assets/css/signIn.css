@@ -6,14 +6,17 @@
     font-family: "Raleway";
 }
 
-body {
+body,
+p {
     margin: 0;
 }
 
 a {
     text-decoration: none;
-    color: var(--text-color);
+
 }
+
+
 
 button {
     letter-spacing: 2px;
@@ -22,6 +25,7 @@ button {
     font-size: 0.75rem;
     color: var(--text-color);
     padding: 8px 26px;
+    border-radius: 500px;
     border: none;
 }
 
@@ -58,4 +62,114 @@ header img {
 .signUp:hover {
     background-color: var(--text-color);
     color: var(--primary-color);
+}
+
+/* Main */
+
+.main {
+    background-color: rgb(169, 53, 53);
+
+
+    padding: 24px;
+    margin: 100px;
+}
+
+/*Container - Login*/
+
+.container-login {
+
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: var(--form-bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px;
+    align-items: start;
+
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+::placeholder {
+    color: var(--form-field-placeholder);
+}
+
+input {
+    display: block;
+    background-color: var(--form-field-bg-color);
+    padding: 16px;
+    border-radius: 8px;
+    border: var(--form-field-border);
+    width: 90%;
+}
+
+.remind-password {
+    border: none;
+    background: transparent;
+    color: var(--link-color);
+    letter-spacing: normal;
+    text-transform: none;
+    font-size: 1rem;
+}
+
+.signIn-login {
+    background-image: var(--btn-bg-color-gradient);
+    background-size: 600%;
+    padding: 16px 40px;
+    font-size: 0.85rem;
+    transition: all 1s;
+}
+
+.signIn-login:hover {
+
+    background-color: transparent;
+    outline: 3px solid var(--tertiary-color);
+    transform: scale(1.01);
+    background-position: 100% 0;
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+}
+
+.footer p {
+    margin: 16px 0px;
+    font-size: 0.75rem;
+    font-family: "Quicksand";
+    color: var(--link-color);
+}
+
+
+
+.link {
+    color: var(--link-color);
+    transition: color 1s;
+    font-size: 0.88rem;
+    font-weight: bold;
+    margin: 0px 14px;
+}
+
+.link:hover {
+    color: var(--text-color);
+}
+
+.logos {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 80px;
 }
