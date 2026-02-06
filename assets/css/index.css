@@ -1,0 +1,142 @@
+@import url(../css/global.css);
+
+/*Geral*/
+
+* {
+    font-family: "Raleway";
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+h2,
+p,
+h3 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: var(--primary-color);
+}
+
+button {
+    border: none;
+    background-color: var(--tertiary-color);
+    border-radius: 500px;
+    padding: 8px 26px;
+    font-weight: 700;
+}
+
+/*Header*/
+
+.header {
+    background-color: var(--nav-bg-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+
+}
+
+.header img {
+    height: 27px;
+}
+
+.header-signIn,
+.header-signUp {
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0 24px 0 0;
+    font-size: 0.75rem;
+}
+
+.header-signUp {
+    transition: background-color 1s, color 1s;
+}
+
+.header-signUp:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+/* Section 1 (Renomear)*/
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0 300px 0;
+}
+
+.logos-ch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.section-1-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-1-title h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.section-1-title h2 {
+    font-size: 3rem;
+}
+
+
+
+.divider {
+    background-image: var(--divider-bg-color);
+    width: 45%;
+    height: 4px;
+    border: none;
+}
+
+
+
+.price-offer-section1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.section-1-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-1-offer p {
+    font-family: "Quicksand";
+    font-size: 1.25rem;
+}
+
+.section-1-button {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    padding: 16px 40px;
+    background: var(--btn-bg-color-gradient);
+    background-size: 300%;
+    transition: background-position 1.5s, background-color 1s, border 1s;
+}
+
+.section-1-button:hover {
+    background-color: transparent;
+    background-position: 100% 0;
+    border: 3px var(--secondary-color) solid;
+}
+
+.observacao {
+    max-width: 20%;
+    text-align: center;
+    font-family: "Quicksand";
+    font-weight: lighter;
+}

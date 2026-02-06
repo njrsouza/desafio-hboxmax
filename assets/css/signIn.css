@@ -11,6 +11,7 @@ body {
     background-image: url(../images/background-movies-series.png);
     background-size: cover;
     background-color: var(--primary-color);
+
 }
 
 body,
@@ -35,6 +36,7 @@ button {
     border: none;
 }
 
+a:hover,
 button:hover {
     cursor: pointer;
 }
@@ -95,6 +97,7 @@ header img {
 
 .title {
     text-align: center;
+    letter-spacing: 2px;
 }
 
 form {
