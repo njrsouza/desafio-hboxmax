@@ -222,6 +222,45 @@ li::marker {
     font-size: 2rem;
 }
 
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+
+}
+
+.footer p {
+    margin: 16px 0px;
+    font-size: 0.75rem;
+    font-family: "Quicksand";
+    color: var(--link-color);
+}
+
+
+
+.link {
+    color: var(--link-color);
+    transition: color 1s;
+    font-size: 0.88rem;
+    font-weight: bold;
+    margin: 0px 14px;
+    letter-spacing: 2px;
+}
+
+.link:hover {
+    color: var(--text-color);
+}
+
+.logos {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 80px;
+}
+
 /* Animation */
 
 @keyframes wiggle {
