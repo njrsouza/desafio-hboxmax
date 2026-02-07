@@ -125,6 +125,7 @@ button {
     padding: 16px 40px;
     background: var(--btn-bg-color-gradient);
     background-size: 300%;
+    animation: wiggle 3s infinite;
     transition: background-position 1.5s, background-color 1s, border 1s;
 }
 
@@ -139,4 +140,44 @@ button {
     text-align: center;
     font-family: "Quicksand";
     font-weight: lighter;
+}
+
+
+/* Animation */
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(-8deg);
+    }
+
+    /* Rotação maior inicial */
+    20% {
+        transform: rotate(8deg);
+    }
+
+    /* Rotação maior inicial */
+    30% {
+        transform: rotate(-5deg);
+    }
+
+    /* Diminuindo a energia */
+    40% {
+        transform: rotate(5deg);
+    }
+
+    /* Quase parando */
+    50% {
+        transform: rotate(0deg);
+    }
+
+    /* Parou */
+    100% {
+        transform: rotate(0deg);
+    }
+
+    /* Mantém parado até o fim do ciclo */
 }
