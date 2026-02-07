@@ -10,7 +10,8 @@
 
 h2,
 p,
-h3 {
+h3,
+ul {
     margin: 0;
 }
 
@@ -129,6 +130,12 @@ button {
     transition: background-position 1.5s, background-color 1s, border 1s;
 }
 
+
+
+.animation {
+    animation: none;
+}
+
 .section-1-button:hover {
     background-color: transparent;
     background-position: 100% 0;
@@ -142,6 +149,78 @@ button {
     font-weight: lighter;
 }
 
+
+/* Planos de assinatura*/
+
+.teste {
+    display: flex;
+    gap: 80px;
+    margin: 40px 0;
+}
+
+.plans h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    max-width: 75%;
+}
+
+.plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/background-movies-series.png);
+}
+
+
+.plans-card {
+    background: var(--card-bg-color);
+    border-radius: 8px;
+    padding: 40px 60px;
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.info-plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 16px;
+}
+
+.info-plan h3 {
+    font-size: 1.5rem;
+}
+
+.price-plan {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.price-plan span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+ul li {
+    font-size: 1.25rem;
+    padding: 0 0 0 14px;
+    margin: 0 0 14px;
+}
+
+ul {
+    padding: 0;
+}
+
+li::marker {
+    content: '+';
+    font-size: 2rem;
+}
 
 /* Animation */
 
