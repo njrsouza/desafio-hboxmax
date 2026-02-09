@@ -178,11 +178,11 @@ button {
     background: var(--card-bg-color);
     border-radius: 8px;
     padding: 40px 60px;
+    min-height: 600px;
     max-width: 400px;
-
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between;
 }
 
 .info-plan {
@@ -207,6 +207,10 @@ button {
     font-weight: normal;
 }
 
+.teste button {
+    font-size: 0.8rem;
+}
+
 ul li {
     font-size: 1.25rem;
     padding: 0 0 0 14px;
@@ -220,6 +224,23 @@ ul {
 li::marker {
     content: '+';
     font-size: 2rem;
+}
+
+/* Channels */
+
+.channels {
+    display: grid;
+    grid-column: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 15px;
+
+
+}
+
+.channel-card {
+    width: auto;
+    height: auto;
+    background-color: red;
 }
 
 /* Footer */
