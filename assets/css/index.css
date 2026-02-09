@@ -127,9 +127,8 @@ button {
     background: var(--btn-bg-color-gradient);
     background-size: 300%;
     animation: wiggle 3s infinite;
-    transition: background-position 1.5s, background-color 1s, border 1s;
+    transition: all 1s, background-position 1.5s;
 }
-
 
 
 .animation {
@@ -209,6 +208,10 @@ button {
 
 .teste button {
     font-size: 0.8rem;
+}
+
+.teste button:hover {
+    transform: scale(1.05);
 }
 
 ul li {
