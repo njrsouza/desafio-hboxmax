@@ -169,7 +169,9 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(../images/background-movies-series.png);
+    background: url(../images/background-movies-series.png) no-repeat;
+    background-size: cover;
+
 }
 
 
@@ -232,19 +234,73 @@ li::marker {
 /* Channels */
 
 .channels {
+    text-align: center;
+    padding: 24px;
+    margin: 100px auto;
+    max-width: 1200px;
+}
+
+.channels h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.kaka {
     display: grid;
-    grid-column: 33% 33% 33%;
-    grid-template-rows: 50% 50%;
-    grid-gap: 15px;
-
-
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+    justify-content: center;
 }
 
 .channel-card {
-    width: auto;
-    height: auto;
-    background-color: red;
+    border-radius: 8px;
+    transition: all 1.5s;
 }
+
+.channel-card img {
+    max-width: 100%;
+    object-fit: cover;
+    transition: opacity 1.5s;
+}
+
+.channel-card:hover {
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: scale(1.05);
+}
+
+#hbo:hover {
+    background-image: url('../images/hbo-hover_0.webp');
+}
+
+#max-originals:hover {
+    background-image: url('../images/MAX-Hover.webp');
+
+}
+
+#dc:hover {
+    background-image: url('../images/DC-Hover.webp');
+}
+
+#ucl:hover {
+    background-image: url('../images/UCL-Hover.webp');
+}
+
+#wb:hover {
+    background-image: url('../images/WB-Hover.webp');
+}
+
+#cn:hover {
+    background-image: url('../images/CN-Hover.png');
+}
+
+.channel-card:hover img {
+    opacity: 0;
+}
+
+
+
 
 /* Footer */
 
